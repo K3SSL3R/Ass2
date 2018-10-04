@@ -117,7 +117,7 @@ void pushHistory(HistoryList list){
 
    while(i < MAXHIST - 1){
       strcpy(list.commands[i].commandLine, list.commands[i+1].commandLine);
-      list.commands[i].seqNo = list.commands[i+1].commandLine;
+      list.commands[i].seqNumber = list.commands[i+1].seqNumber;
       i++;
    }
 
