@@ -45,7 +45,7 @@ int initCommandHistory()
 
 }
 
-// [ 0 1 2 3 4 5]
+// [ 0 1 2 3 4 5]//
 
 // addToCommandHistory()
 // - add a command line to the history list
@@ -60,7 +60,7 @@ void addToCommandHistory(char *cmdLine, int seqNo)
    //else if seqNo > maxhistory,  pushHistory()
    //                             strcpy(CommandHistory->commands[MAXHIST - 1]->commandline, cmdLine)
 
-   if (seqNo <= MAXHIST){
+   if (seqNo < MAXHIST){
       CommandHistory.commands[seqNo].seqNumber = seqNo;
       strcpy(CommandHistory.commands[seqNo].commandLine, cmdLine);
    }
@@ -77,6 +77,9 @@ void addToCommandHistory(char *cmdLine, int seqNo)
 void showCommandHistory(FILE *outf)
 {
    // TODO
+
+
+
 }
 
 // getCommandFromHistory()
