@@ -96,8 +96,6 @@ int main(int argc, char *argv[], char *envp[])
       // if the command name is relative, use the name as given.
       
       //after command, print command return status
-
-
       char** args = tokenise(line, " "); 
 
       if(strcmp(args[0], "exit") == 0){
@@ -140,7 +138,7 @@ int main(int argc, char *argv[], char *envp[])
 char **fileNameExpand(char **tokens)
 {
    // TODO
-   return deeznuts;
+   return tokens;
 }
 
 // findExecutable: look for executable in PATH
